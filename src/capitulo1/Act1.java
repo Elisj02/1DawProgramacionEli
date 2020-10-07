@@ -1,8 +1,8 @@
-package actividades;
+package capitulo1;
 
 import javax.swing.JOptionPane;
 
-public class act1 {
+public class Act1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

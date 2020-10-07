@@ -1,4 +1,4 @@
-package actividades;
+package capitulo1;
 
 import javax.swing.JOptionPane;
 
