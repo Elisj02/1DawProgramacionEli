@@ -13,10 +13,16 @@ public class Act7 {
 //Este ejercicio pedirá al usuario un valor y mostrará el 
 //complemento a dos del mismo. La impresión debe hacerse sin signo.
 
-String srt;
-int num;
+		String srt;
+		int num;
 
-srt = JOptionPane.showInputDialog("Introduce un número para realizarle el complemento a dos: ");
+		srt = JOptionPane.showInputDialog("Introduce un número para realizarle el complemento a dos: ");
+		num = Integer.parseInt(srt);
+
+		num = ~num + 1;
+
+		System.out.println("El complemento a dos es: " + num);
+
 	}
 
 }
