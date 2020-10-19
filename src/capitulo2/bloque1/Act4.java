@@ -14,7 +14,7 @@ public class Act4 {
 		String srt;
 		int var1, var2, var3, var4, var5;
 
-		srt = JOptionPane.showInputDialog("Introduzca cinco números para mostrar el mayor. \nNúmero 1: ");
+		srt = JOptionPane.showInputDialog("Introduzca cinco números para mostrar el menor. \nNúmero 1: ");
 		var1 = Integer.parseInt(srt);
 
 		srt = JOptionPane.showInputDialog("Número 2: ");

@@ -18,7 +18,7 @@ public class Act7 {
 
 		srt = JOptionPane.showInputDialog("Introduce un número para determinar si es par o impar: ");
 		num = Integer.parseInt(srt);
-
+//num & 1=1 porque los números en binario siempre que acaban en 1 son impares
 		if ((num & 1) == 1) {
 			System.out.println("El número es impar.");
 		} else
