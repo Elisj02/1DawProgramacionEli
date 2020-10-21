@@ -33,7 +33,7 @@ Ejemplo: Pagamos con 2000 unidades monetarias un articulo que nos cuesta 375 uni
 			suma100 = coci100 * 100; //para saber el total de las monedas de 100
 			
 			System.out.println(coci100 + " monedas de 100: " + suma100);
-			cambio = importe - suma100;
+			cambio = cambio - suma100;
 		}
 		if ((cambio / 50) > 0) {
 			coci50 = cambio / 50;

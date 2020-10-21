@@ -46,6 +46,7 @@ public class Act3 {
 		double hipotenusa, percircun, arearect, areatr, cateto1, cateto2,
 		longrad, areacircun, baser, alturar, baset, alturat;
 		do {
+			
 			do {
 				System.out.println("1. Cálculo de la hipotenusa de un triángulo. "
 						+ "\n2. Cálculo de la superficie de una circunferencia."
@@ -55,7 +56,9 @@ public class Act3 {
 
 				str = JOptionPane.showInputDialog("Introduzca una opción: ");
 				opcion = Integer.parseInt(str);
-			} while (opcion < 0 || opcion > 5); 
+			} while (opcion < 0 || opcion > 5); {
+				System.out.println("Opción incorrecta.");
+			}
 			switch (opcion) {
 
 			case 1:
@@ -127,6 +130,7 @@ public class Act3 {
 
 			}
 		} while (opcion != 0);
+	
 
 	}
 
