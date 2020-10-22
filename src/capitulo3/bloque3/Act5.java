@@ -5,7 +5,9 @@ import javax.swing.JOptionPane;
 public class Act5 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*  Realiza un ejercicio parecido a los dos anteriores, dónde se imprima el
+		 *  mayor valor y el menor de todos los introducidos.
+		 */
 
 		String srt;
 		int num = -1, i, menor = 0, mayor = 0;
