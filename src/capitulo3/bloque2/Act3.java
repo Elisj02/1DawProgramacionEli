@@ -17,9 +17,8 @@ public class Act3 {
 		srt = JOptionPane.showInputDialog("Introduce un número para mostrar todos sus múltiplos menores de 100: ");
 		num = Integer.parseInt(srt);
 
-		for (i = 1; num < 100; i++) {
-			num *= i;
-			System.out.println(num);
+		for (i = 1; (num * i) < 100; i++) {
+			System.out.println(num * i);
 		}
 
 	}

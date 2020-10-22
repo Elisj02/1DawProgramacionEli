@@ -19,9 +19,8 @@ public class Act4 {
 		srt = JOptionPane.showInputDialog("Introduce un número: ");
 		num = Integer.parseInt(srt);
 
-		for (i = 1; num < limite; i++) {
-			num *= i;
-			System.out.println(num);
+		for (i = 1; (num * i) < limite; i++) {
+			System.out.println(num * i);
 		}
 	}
 

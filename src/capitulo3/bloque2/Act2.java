@@ -19,7 +19,7 @@ public class Act2 {
 				"Vamos a mostrar el número mayor y menor. \nIntroduzca la cantidad de números que quiere introducir: ");
 		veces = Integer.parseInt(srt);
 
-		for (i = 1; i < veces; i++) {
+		for (i = 0; i < veces; i++) {
 
 			srt = JOptionPane.showInputDialog("Introduce un número: ");
 			num = Integer.parseInt(srt);
