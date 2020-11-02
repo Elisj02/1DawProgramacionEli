@@ -11,14 +11,14 @@ public class Act6 {
 		 * Realiza un ejercicio igual al anterior, en el que el usuario también pueda
 		 * deteminar la dirección del movimiento.
 		 */
-
 		int num[] = new int[5];
-		int aux = 0, cant, direcc;
+		int aux, cant = 0, direcc;
 		String srt;
 
-		srt = JOptionPane.showInputDialog("Introduce una dirección para desplazar el array. 1 - izquierda. 2 - derecha: ");
+		srt = JOptionPane
+				.showInputDialog("Introduce una dirección para desplazar el array. 1 - izquierda. 2 - derecha: ");
 		direcc = Integer.parseInt(srt);
-		
+
 		srt = JOptionPane.showInputDialog("Introduce la cantidad de posiciones que desea desplazar: ");
 		cant = Integer.parseInt(srt);
 
@@ -29,26 +29,23 @@ public class Act6 {
 		if (direcc == 1) {
 			for (int i = 0; i < cant; i++) {
 
-				// El primero lo guardo en aux
-				num[0] = aux;
-				
-				// desplazo todos los elementos a la izq dejando la posición 4 vacía
-				for (int j = num.length + 1; j > 0; j++) {
+				// Salvaguardo la primera posición del array
+				aux = num[0];
+				// Recorro las posiciones del array de primera a penúltima
+				for (int j = 0; j < num.length - 1; j++) {
 					num[j] = num[j + 1];
 				}
-				// El primero pasa a la posición 4
-				aux = num[num.length + 1];
-
-
+				// La primera posición, guardada en aux, pasa a ser la última
+				num[num.length - 1] = aux;
 			}
 			for (int i = 0; i < num.length; i++) {
 				System.out.println("Array desplazado hacia la izquierda " + cant + " veces: " + num[i]);
 
 			}
-		}	
-		
+		}
+
 		else {
-			
+
 			for (int i = 0; i < cant; i++) {
 
 				// El último lo guardo en aux
@@ -67,8 +64,5 @@ public class Act6 {
 
 			}
 		}
-
-		
-
 	}
 }
