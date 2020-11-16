@@ -1,7 +1,5 @@
 package capitulo5.bloque5_Métodos_Y_Arrays;
 
-import capitulo5.bloque1.Utils;
-
 public class Método5_RemoveInteger {
 
 	public static void main(String[] args) {
