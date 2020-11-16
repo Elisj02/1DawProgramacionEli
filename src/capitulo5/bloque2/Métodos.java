@@ -18,7 +18,21 @@ public class Métodos {
 		System.out.println("\n-Act5. Devolver número en letra-");
 		System.out.println(getStringFromEntero(8));
 		System.out.println("\n-Act6. Imprimir el mínimo, medio y máximo-");
-		imprimeMinimoAMaximo(84, 29, 25);
+
+		int num1;
+		String srt;
+		srt = JOptionPane.showInputDialog("Introduce un número: ");
+		num1 = Integer.parseInt(srt);
+
+		int num2;
+		srt = JOptionPane.showInputDialog("Introduce un número: ");
+		num2 = Integer.parseInt(srt);
+
+		int num3;
+		srt = JOptionPane.showInputDialog("Introduce un número: ");
+		num3 = Integer.parseInt(srt);
+
+		imprimeMinimoAMaximo(num1, num2, num3);
 		System.out.println("\n-Act7. Fibonacci-");
 		int longitud = Integer.parseInt(JOptionPane.showInputDialog("Introduce una longitud para el array: "));
 		fibonacci(longitud);
@@ -64,11 +78,11 @@ public class Métodos {
 		int valor;
 		String srt;
 
-		srt = JOptionPane.showInputDialog("Introduce un valor para verificar si está entre los "
-				+ "límites establecidos: ");
+		srt = JOptionPane
+				.showInputDialog("Introduce un valor para verificar si está entre los " + "límites establecidos: ");
 		valor = Integer.parseInt(srt);
 
-		//para que pida el valor hasta que el número esté dentro del límite
+		// para que pida el valor hasta que el número esté dentro del límite
 		while (valor < min || valor > max) {
 			srt = JOptionPane.showInputDialog("Introduce un número entre " + min + " y " + max + ": ");
 			valor = Integer.parseInt(srt);
@@ -85,7 +99,8 @@ public class Métodos {
 		 * usuario y los enviará a este nuevo método. Finalmente imprimirá en consola el
 		 * valor devuelto por el método.
 		 */
-		
+
+		// Math.max(num1, num2); Es lo mismo
 		int maximo = 0;
 
 		if (num1 > num2) {
@@ -121,29 +136,20 @@ public class Métodos {
 		 * este método "getStringFromEntero".
 		 */
 
-		switch (num) {
-		case 1:
-			return "uno";
-		case 2:
-			return "dos";
-		case 3:
-			return "tres";
-		case 4:
-			return "cuatro";
-		case 5:
-			return "cinco";
-		case 6:
-			return "seis";
-		case 7:
-			return "siete";
-		case 8:
-			return "ocho";
-		case 9:
-			return "nueve";
-		case 10:
-			return "diez";
+		/*
+		 * switch (num) { case 1: return "uno"; case 2: return "dos"; case 3: return
+		 * "tres"; case 4: return "cuatro"; case 5: return "cinco"; case 6: return
+		 * "seis"; case 7: return "siete"; case 8: return "ocho"; case 9: return
+		 * "nueve"; case 10: return "diez"; } return "";
+		 */
+
+		String enletra[] = new String[] { "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve",
+				"diez" };
+		if (num >= enletra.length) {
+			return "no hay traducción";
 		}
-		return "";
+		return enletra[num];
+
 	}
 
 	public static void imprimeMinimoAMaximo(int num1, int num2, int num3) {
@@ -184,15 +190,19 @@ public class Métodos {
 			med = num2;
 		}
 		System.out.println("El mayor: " + max + "\nEl mediano es: " + med + "\nEl menor es: " + min);
+
+		// int array[] = new int[] { num1, num2, num3 };
+		// UtilsArrays.ordenarArray(array);
+		// UtilsArrays.mostrarArray(array);
 	}
 
 	public static void fibonacci(int longitud) {
 
 		/*
-		 * La serie de Fibonacci es una serie numérica que comienza en los números
-		 * 1, 1 y continua de forma infinita, calculando cada miembro de la serie como
-		 * la suma de los dos anteriores. De esta manera, la serie de Fibonacci comienza
-		 * 1, 1, 2, 3, 5, 8, 13, 21, 34... Debes realizar un método llamado "fibonacci".
+		 * La serie de Fibonacci es una serie numérica que comienza en los números 1, 1
+		 * y continua de forma infinita, calculando cada miembro de la serie como la
+		 * suma de los dos anteriores. De esta manera, la serie de Fibonacci comienza 1,
+		 * 1, 2, 3, 5, 8, 13, 21, 34... Debes realizar un método llamado "fibonacci".
 		 * Recibirá un argumento de entrada, de tipo entero. El método debe devolver un
 		 * array con la serie de Fibonacci. El parámetro de entrada del método
 		 * determinará la longitud del array a devolver. El método main recibirá el
@@ -201,20 +211,20 @@ public class Métodos {
 
 		int numeros[] = new int[longitud]; // Declaro el array
 
-		// Los dos primeros números de Fibonacci se indican 
-		
+		// Los dos primeros números de Fibonacci se indican
+
 		numeros[0] = 1;
 		numeros[1] = 1;
-		
+
 		// Recorro el array desde la posición "2", calculando cada número como la suma
 		// de los dos anteriores
-		
+
 		for (int i = 2; i < numeros.length; i++) {
 			numeros[i] = numeros[i - 1] + numeros[i - 2];
 		}
 
 		// Imprimo el array
-		
+
 		for (int i = 0; i < numeros.length; i++) {
 			System.out.print(numeros[i] + " ");
 		}
@@ -224,31 +234,31 @@ public class Métodos {
 	public static void imprimeArray(int array[]) {
 
 		/*
-		 * Método que imprima en pantalla un array, recibirá un array como
-		 * parámetro de entrada y lo mostrará en consola. Main debe enviar el array al
-		 * método, llamado "imprimeArray".
+		 * Método que imprima en pantalla un array, recibirá un array como parámetro de
+		 * entrada y lo mostrará en consola. Main debe enviar el array al método,
+		 * llamado "imprimeArray".
 		 */
 
 		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
+			System.out.print(array[i]);
 		}
 	}
 
 	public static int[] recorte(int array[], int primerIndice, int ultimoIndice) {
 
 		/*
-		 * Método que "recorte" un array. El método recibirá un array, un
-		 * "primerIndice" y un "ultimoIndice" y debe devolver un array, formado con los
-		 * elementos del array recibido, cuyos índices estén dentro del intervalo
-		 * cerrado formado por los dos índices recibidos
+		 * Método que "recorte" un array. El método recibirá un array, un "primerIndice"
+		 * y un "ultimoIndice" y debe devolver un array, formado con los elementos del
+		 * array recibido, cuyos índices estén dentro del intervalo cerrado formado por
+		 * los dos índices recibidos
 		 */
 
-		//para que la longitud del array esté formada por los índices recibidos
-		int array2[] = new int[ultimoIndice - primerIndice];
+		// para que la longitud del array esté formada por los índices recibidos
+		int array2[] = new int[(ultimoIndice - primerIndice) + 1];
 
 		for (int i = 0; i < array2.length; i++) {
-			//para que el valor 0 del array2 sea el mismo que el primer indice introducido
-			//del array1 y así con todos los números del array2.
+			// para que el valor 0 del array2 sea el mismo que el primer indice introducido
+			// del array1 y así con todos los números del array2.
 			array2[i] = array[i + primerIndice];
 		}
 
@@ -259,8 +269,8 @@ public class Métodos {
 	public static void recursividad(int num) {
 
 		/*
-		 * Método que muestre en pantalla los números del 1 al 100. El único
-		 * requisito para esto es que debe hacerse utilizando la recursividad.
+		 * Método que muestre en pantalla los números del 1 al 100. El único requisito
+		 * para esto es que debe hacerse utilizando la recursividad.
 		 */
 
 		// muestra números del 1 al 100
