@@ -13,14 +13,14 @@ public class Act11_eliminarFila {
 		System.out.println("La matriz original es:");
 		System.out.println();
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				matriz[i][j] = Utils.obtenerNumeroAzar();
 				System.out.print(matriz[i][j] + "\t");
 			}
 			System.out.println();
 
 		}
-		System.out.println(eliminarFila(matriz));
+		Act02_mostrarMatriz.mostrarMatriz(eliminarFila(matriz));
 	}
 
 	public static int[][] eliminarFila(int matriz[][]) {
@@ -39,17 +39,17 @@ public class Act11_eliminarFila {
 	
 		int filaEliminada [][] = new int [matriz.length-1][matriz[0].length];
 		
-		int k = 0;
 		System.out.println("\nLa matriz con la fila eliminada es: ");
 		System.out.println();
 		
-		for (int i = 0; i < matriz.length; i++) {
+		for (int i = 0, k = 0; i < matriz.length; i++) {
 			if (i != fila) {
-			for (int j = 0; k < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				filaEliminada[k][j] = matriz[i][j];
+			}
 				k++;
 				
-			}
+			
 			}
 		}
 		return filaEliminada;

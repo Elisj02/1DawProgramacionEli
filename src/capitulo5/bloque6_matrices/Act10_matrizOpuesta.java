@@ -32,7 +32,7 @@ public class Act10_matrizOpuesta {
 		System.out.println();
 		for (int i = 0; i < matrizOpuesta.length; i++) {
 			for (int j = 0; j < matrizOpuesta.length; j++) {
-				matrizOpuesta[i][j] = (matriz[i][j])*-1;
+				matrizOpuesta[i][j] = (matriz[i][j])*-1; // es lo mismo que -matriz[i][j]
 				System.out.print(matrizOpuesta[i][j] + "\t");
 			}
 			System.out.println();

@@ -26,10 +26,10 @@ public class Act07_ArrayUnidimensional {
 
 		int indice = 0;
 		
-		int array[] = new int[matriz.length * matriz.length];
+		int array[] = new int[matriz.length * matriz[0].length];
 	
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				array[indice] = matriz[i][j];
 				indice++;
 			}

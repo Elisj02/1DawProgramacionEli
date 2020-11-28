@@ -9,8 +9,8 @@ public class Act04_comprobarSiHayMatrizDiagonal {
 									 {1, 0, 0},
 									 {0, 1, 0},
 									 {0, 0, 1}};
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+		for (int i = 0; i < matriz[i].length; i++) {
+			for (int j = 0; j < matriz[j].length; j++) {
 				System.out.print(matriz[i][j] + "\t");
 			}
 			System.out.println();
@@ -26,8 +26,8 @@ public class Act04_comprobarSiHayMatrizDiagonal {
 		 */
 		boolean diagonal = true;
 
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+		for (int i = 0; i < matriz[i].length; i++) {
+			for (int j = 0; j < matriz[j].length; j++) {
 
 				if (i != j) {
 					if (matriz[i][j] == 0) {

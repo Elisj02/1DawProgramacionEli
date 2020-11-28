@@ -25,7 +25,7 @@ public class Act06_MatrizDispersa {
 		//Para comprobar la fila se pone [i] [j].
 		for (int i = 0; i < matriz.length; i++) {
 			boolean sin0 = true;
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				if (matriz[i][j] == 0) {
 					sin0 = false;
 

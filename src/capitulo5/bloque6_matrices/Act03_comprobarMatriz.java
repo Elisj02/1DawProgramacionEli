@@ -8,8 +8,8 @@ public class Act03_comprobarMatriz {
 		// TODO Auto-generated method stub
 
 		int matriz[][] = new int[3][3];
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+		for (int i = 0; i < matriz[i].length; i++) {
+			for (int j = 0; j < matriz[j].length; j++) {
 				matriz[i][j] = Utils.obtenerNumeroAzar(-10, 10);
 				System.out.print(matriz[i][j] + "\t");
 			}
@@ -25,17 +25,15 @@ public class Act03_comprobarMatriz {
 		 * mayores o iguales a cero). El método recibirá una matriz y devolver un valor
 		 * "boolean", indicando si la matriz es o no es positiva.
 		 */
-
-		boolean positiva = true;
-
+		
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				if (matriz[i][j] < 0) {
-					positiva = false;
+					return false;
 				}
 			}
 		}
-		return positiva;
+		return true;
 	}
 
 }

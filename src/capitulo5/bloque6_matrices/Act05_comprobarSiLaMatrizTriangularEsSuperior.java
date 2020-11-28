@@ -9,8 +9,8 @@ public class Act05_comprobarSiLaMatrizTriangularEsSuperior {
 									   {1, 1, 1},
 									   {0, 1, 1},
 									   {0, 0, 0}};
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+		for (int i = 0; i < matriz[i].length; i++) {
+			for (int j = 0; j < matriz[j].length; j++) {
 				System.out.print(matriz[i][j] + "\t");
 			}
 			System.out.println();
@@ -29,7 +29,7 @@ public class Act05_comprobarSiLaMatrizTriangularEsSuperior {
 		boolean superior = true;
 		
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < i; j++) {
 				if (matriz[i][j] != 0) {
 					superior = false;
 					break;

@@ -11,7 +11,7 @@ public class Act09_matrizTranspuesta {
 		System.out.println("La matriz original es:");
 		System.out.println();
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				matriz[i][j] = Utils.obtenerNumeroAzar();
 				System.out.print(matriz[i][j] + "\t");
 			}
@@ -29,7 +29,7 @@ public class Act09_matrizTranspuesta {
 		System.out.println();
 		
 		for (int i = 0; i < matriz.length; i++){
-			for (int j = 0; j < matriz.length; j++) {
+			for (int j = 0; j < matriz[i].length; j++) {
 				matriz2[i][j] = matriz[j][i];
 				System.out.print(matriz2[i][j] + "\t");
 				
