@@ -44,7 +44,7 @@ public class Act2_lista_integer {
 		
 			switch (opcion) {
 			case 0: 
-				System.out.println("Has abandonado el programa.");
+				System.err.println("Has abandonado el programa.");
 				break;
 			case 1:
 				listaRandom(fichero);
@@ -62,7 +62,7 @@ public class Act2_lista_integer {
 				visualizaLista(fichero);
 				break;
 			default:
-				System.out.println("Opción no válida");
+				System.err.println("Opción no válida");
 			}
 			
 			
@@ -74,7 +74,7 @@ public class Act2_lista_integer {
 	 * @return
 	 */
 	public static int menu () {
-		String strMenu = "\n\nMenÃº"
+		String strMenu = "\n\nMenú"
 				+ "\n0.- SALIR"
 				+ "\n1.- CREAR ALEATORIAMENTE LA LISTA DE VALORES."
 				+ "\n2.- CALCULAR SUMA, MEDIA, MAYOR Y MENOR."
@@ -91,6 +91,7 @@ public class Act2_lista_integer {
 	 * @param lista
 	 */
 	public static void visualizaLista (List<Integer> lista) {
+		System.err.println("VISUALIZAR LISTA.");
 		System.out.println("\n\nContenido del fichero");
 		for (int i = 0; i < lista.size(); i++) {
 			System.out.println("\t" + i + " - " + lista.get(i));
@@ -98,6 +99,7 @@ public class Act2_lista_integer {
 	}
 	
 	public static void listaRandom(List<Integer>lista) {
+		System.err.println("CREAR ALEATORIAMENTE LA LISTA DE VALORES.");
 		String str;
 		str = JOptionPane.showInputDialog("Introduce la longitud de la lista: ");
 		int longitud = Integer.parseInt(str);
@@ -115,7 +117,7 @@ public class Act2_lista_integer {
 	}
 	
 	public static void calcular(List<Integer>lista) {
-		System.out.println("CALCULAR SUMA, MEDIA, MAYOR Y MENOR");
+		System.err.println("CALCULAR SUMA, MEDIA, MAYOR Y MENOR");
 		int suma = 0, mayor = 0, menor = 0;
 		float media = 0f;
 		
@@ -144,6 +146,7 @@ public class Act2_lista_integer {
 	}
 	
 	public static void agregar(List<Integer>lista) {
+		System.err.println("AGREGAR VALORES.");
 		String str;
 		str = JOptionPane.showInputDialog("¿Cuántos valores quiere añadir?: ");
 		int añadir = Integer.parseInt(str);
@@ -163,7 +166,7 @@ public class Act2_lista_integer {
 	}
 	
 	public static void eliminar(List<Integer>lista) {
-		
+		System.err.println("ELIMINAR UN INTERVALO DE VALORES.");
 		String str;
 		int veces = 0;
 		str = JOptionPane.showInputDialog("Introduzca la primera línea del intervalo que quiere eliminar: ");
