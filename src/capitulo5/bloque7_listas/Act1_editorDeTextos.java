@@ -41,8 +41,9 @@ public class Act1_editorDeTextos {
 		// Declaro variables necesarias
 				int opcion;
 				List<String> fichero = new ArrayList<String>();
-				List<String> portapapeles2 = new ArrayList<String>();
 				List<String> fichero2 = new ArrayList<String>();
+				List<String>portapapeles = new ArrayList<String>();
+
 
 				
 				// Inicializo algo de contenido en la lista. Esto debe eliminarse cuando el programa esté finalizado
@@ -68,10 +69,10 @@ public class Act1_editorDeTextos {
 					eliminarLinea(fichero);
 					break;
 			case 5:
-					portapapeles2 = cortarLineas(fichero);
+					cortarLineas(fichero, portapapeles);
 					break;
 			case 6:
-					pegarLineas(fichero2, portapapeles2);
+					pegarLineas(fichero2, portapapeles);
 					visualizaLista2(fichero2);
 					break;
 					
@@ -110,7 +111,7 @@ public class Act1_editorDeTextos {
 		}
 
 		public static void visualizaLista (List<String> lista) {
-			System.out.println("\n\nContenido del fichero");
+			System.out.println("\n\nContenido del fichero\n");
 			for (int i = 0; i < lista.size(); i++) {
 				System.out.println("\t" + i + " - " + lista.get(i));
 			}
@@ -152,10 +153,10 @@ public class Act1_editorDeTextos {
 			lista.remove(linea);
 		}
 		
-		public static List<String> cortarLineas(List<String>lista) {
-			List<String>portapapeles = new ArrayList<String>();
+		public static void cortarLineas(List<String>lista, List<String>portapapeles) {
 			
 			System.err.println("CORTAR UN CONJUNTO DE LÍNEAS.");
+			portapapeles.clear();
 			String str = JOptionPane.showInputDialog("Introduzca la primera línea que quiere borrar: ");
 			int minLin = Integer.parseInt(str);
 			
@@ -166,7 +167,6 @@ public class Act1_editorDeTextos {
 				portapapeles.add(lista.get(minLin));
 				lista.remove(minLin);
 			}
-			return portapapeles;
 		}	
 		
 		public static void pegarLineas(List<String>lista, List<String>lista2) {
@@ -178,10 +178,10 @@ public class Act1_editorDeTextos {
 			lista.addAll(linea, lista2);
 		
 		} 
-		public static void visualizaLista2(List<String> lista) {
-			System.out.println("\n\nContenido del fichero");
-			for (int i = 0; i < lista.size(); i++) {
-				System.out.println("\t" + i + " - " + lista.get(i));
+		public static void visualizaLista2(List<String>portapapeles) {
+			System.out.println("\n\nContenido del fichero\n");
+			for (int i = 0; i < portapapeles.size(); i++) {
+				System.out.println("\t" + i + " - " + portapapeles.get(i));
 			}
 		
 		}
