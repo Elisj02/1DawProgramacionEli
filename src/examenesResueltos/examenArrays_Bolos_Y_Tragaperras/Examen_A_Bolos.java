@@ -74,20 +74,16 @@ public class Examen_A_Bolos {
 		 * probabilidad de caer.
 		 */
 
-		// En el momento de inicializar el juego, todos los bolos tendrán un valor de
-				// “1”, indicando
-				// que el bolo aún se mantiene en pie. La inicialización del juego debe hacerse
-				// con una
-				// función.
-				int bolosJugador1[] = new int[10];
-				int bolosJugador2[] = new int[10];
-				int valorJuga1 = 10;
-				int valorJuga2 = 10;
-				int puntosJugador1 = 0;
-				int puntosJugador2 = 0;
+				// 1 para indicar que el bolo está en pie.
+				int bolosJ1[] = new int[10];
+				int bolosJ2[] = new int[10];
+				int valorJ1 = 10;
+				int valorJ2 = 10;
+				int puntosJ1 = 0;
+				int puntosJ2 = 0;
 				int rondas = 0;
-				darValoresInicales(bolosJugador1);
-				darValoresInicales(bolosJugador2);
+				darValoresInicales(bolosJ1);
+				darValoresInicales(bolosJ2);
 
 				int lanzamiento;
 				do {
@@ -101,18 +97,18 @@ public class Examen_A_Bolos {
 								JOptionPane.showInputDialog("¿Qué jugador va a jugar? : \n 1: Jugador 1 \n 2: Jugador 2"));
 						switch (jugador) {
 						case 1:
-							puntosJugador1 += (caeBolo(bolosJugador1, valorJuga1, rondas));
-							System.out.println("Puntos Totales : " + puntosJugador1);
-							imprimirBolos(bolosJugador1);
-							valorJuga1 = valorJuga1 / 2;
+							puntosJ1 += (caeBolo(bolosJ1, valorJ1, rondas));
+							System.out.println("Puntos Totales : " + puntosJ1);
+							imprimirBolos(bolosJ1);
+							valorJ1 = valorJ1 / 2;
 							break;
 
 						case 2: 
-							puntosJugador2 += (caeBolo(bolosJugador2, valorJuga2, rondas));
-							System.out.println("Puntos Totales : " + puntosJugador2);
-							imprimirBolos(bolosJugador2);
+							puntosJ2 += (caeBolo(bolosJ2, valorJ2, rondas));
+							System.out.println("Puntos Totales : " + puntosJ2);
+							imprimirBolos(bolosJ2);
 
-							valorJuga2 = valorJuga2 / 2;
+							valorJ2 = valorJ2 / 2;
 
 							break;
 
@@ -120,10 +116,10 @@ public class Examen_A_Bolos {
 
 					}
 
-					System.out.println("Lanzamiento: " + lanzamiento + " - bolosJ1: " + quedanBolos(bolosJugador1) + " - bolosJ2: " + quedanBolos(bolosJugador2));
-				} while (lanzamiento != 0 && (quedanBolos(bolosJugador1) == true) && (quedanBolos(bolosJugador2) == true));
+					System.out.println("Lanzamiento: " + lanzamiento + " - bolosJ1: " + quedanBolos(bolosJ1) + " - bolosJ2: " + quedanBolos(bolosJ2));
+				} while (lanzamiento != 0 && (quedanBolos(bolosJ1) == true) && (quedanBolos(bolosJ2) == true));
 
-				if (puntosJugador1 < puntosJugador2) {
+				if (puntosJ1 < puntosJ2) {
 					System.out.println("Ha ganado Jugador 2");
 				} else {
 					System.out.println("Ha ganado Jugador 1");
@@ -170,9 +166,8 @@ public class Examen_A_Bolos {
 			}
 
 			public static boolean puedoDisparar(int array[],int  numRonda) {
-				int numAzar = (int) Math.round(Math.random() * 100); // Obtengo un número al azar entre 0 y 100
-				// Si el número es menor o igual a la probabilidadDisparo del objeto, decido
-				// disparar
+				int numAzar = (int) Math.round(Math.random() * 100); 
+				// si el número obtenido al azar es mayor o igual que la probabilidad, dispara
 
 			//	int probabilidad = (int) Utils.numAleatorioLimSupInf(30, 70);
 				int probabilidad = calculoProbabilidad(numRonda);
@@ -185,7 +180,7 @@ public class Examen_A_Bolos {
 					}
 				}
 
-				return false; // Si llego hasta aquí es porque la probabilidad no se ha cumplido
+				return false; //No se cumple la probabilidad
 
 			}
 
