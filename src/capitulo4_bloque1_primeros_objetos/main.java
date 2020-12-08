@@ -32,52 +32,39 @@ public class main {
 		for (int i = 0; i < lista.size(); i++) {
 			System.out.println(lista.get(i).toString());
 		}
+		
+		BurbujaColObj(lista);
+		
+		System.out.println(" ");
+		
+		for (int i = 0; i < lista.size(); i++) {
+			System.out.println(lista.get(i).toString());
 		}
 		
-		public static void ordenacionBurbuja() {		
-			
-			int vector[] = UtilsArrays.creaArrayNumerosAzar(5, 0, 10);
-			
-			UtilsArrays.mostrarArray(vector);
-			
-			// Mido el tiempo de inicio
-			long millisAntesDeLaOrdenacion = new Date().getTime();
-			
-			ordenaArrayPorBurbuja(vector);
-
-			// Mido el tiempo después
-			long millisDespuesDeLaOrdenacion = new Date().getTime();
-			
-			// Muestro el tiempo en millis
-			System.out.println("\nEjecución en " + (millisDespuesDeLaOrdenacion - millisAntesDeLaOrdenacion) + " millis\n");
-			
-			// Mostramos el resultado
-			UtilsArrays.mostrarArray(vector);
 		}
+		
 
 		
 		/**
 		 * Implementa el algoritmo de la buburja para ordenar un array
 		 * @param array Array desordenado que se ordenará
+		 * @return 
 		 */
-		public static void ordenaArrayPorBurbuja (int array[]) {
-			boolean hayIntercambios;
-			do {
-				hayIntercambios = false;
-				// Empieza el algoritmo
-				for (int i = 0; i < array.length - 1; i++) {
-					if (array[i+1] < array[i]) {
-						// Entonces hago un intercambio
-						int aux = array[i+1];
-						array[i+1] = array[i];
-						array[i] = aux;
-						hayIntercambios = true;
-					}
-				}
-			} while (hayIntercambios == true);
-		}
-	
-
+		public static void BurbujaColObj(List<CromoBaloncesto> lista) {
+	        CromoBaloncesto aux;
+	        for(int i = 0;i < lista.size()-1;i++){
+	            for(int j = 0;j < lista.size()-i-1;j++){
+	                // El if de abajo va a determinar si el primero es menor que el segundo
+	                // y si es true, se va a realizar el swap con una variable aux para
+	                // mover los objetos del array
+	                if(lista.get(j+1).getPuntosMediosPorpartido() <  lista.get(j).getPuntosMediosPorpartido()){
+	                    aux = lista.get(j+1);
+	                    lista.set(j+1,lista.get(j));
+	                    lista.set(j,aux);
+	                }
+	            }
+	        }
+	    }
 		
 		
 	}
