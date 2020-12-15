@@ -33,7 +33,7 @@ public class main {
 			System.out.println(lista.get(i).toString());
 		}
 		
-		BurbujaColObj(lista);
+		BurbujaConObj(lista);
 		
 		System.out.println(" ");
 		
@@ -50,7 +50,7 @@ public class main {
 		 * @param array Array desordenado que se ordenará
 		 * @return 
 		 */
-		public static void BurbujaColObj(List<CromoBaloncesto> lista) {
+		public static void BurbujaConObj(List<CromoBaloncesto> lista) {
 	        CromoBaloncesto aux;
 	        for(int i = 0;i < lista.size()-1;i++){
 	            for(int j = 0;j < lista.size()-i-1;j++){
