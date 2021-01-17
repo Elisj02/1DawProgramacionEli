@@ -7,7 +7,6 @@ public class Bombilla extends Componente {
 
 	public Bombilla() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Bombilla(String nombre, String componenteAnterior, String componenteSiguiente, String tipo, int potencia) {

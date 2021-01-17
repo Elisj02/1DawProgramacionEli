@@ -3,7 +3,6 @@ package capitulo4_bloque1_primeros_objetos.circuitoElectronico;
 public class Circuito {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Pila pila = new Pila("Pila", "Resistencia", "Interruptor", 20);
 		Resistencia resistencia = new Resistencia("Resistencia", "Bombilla", "Pila", 18);

@@ -6,7 +6,6 @@ public class Interruptor extends Componente {
 
 	public Interruptor() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Interruptor(String nombre, String componenteAnterior, String componenteSiguiente, String material) {

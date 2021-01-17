@@ -6,7 +6,6 @@ public class Pila extends Componente {
 
 	public Pila() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Pila(String nombre, String componenteAnterior, String componenteSiguiente, int voltaje) {

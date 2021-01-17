@@ -8,7 +8,6 @@ public class Componente {
 
 	public Componente() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Componente(String nombre, String componenteAnterior, String componenteSiguiente) {

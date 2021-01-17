@@ -6,7 +6,6 @@ public class Resistencia extends Componente {
 
 	public Resistencia() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Resistencia(String nombre, String componenteAnterior, String componenteSiguiente, int valorResistencia) {
