@@ -15,15 +15,15 @@ public class Dibujo extends Canvas{
 	public void paint(Graphics g) {
 		g.setColor(Color.red);
 		g.fillRect(30, 30, 60, 80);
-
+		
 		g.setColor(Color.black);
 		g.drawRect(30, 30, 60, 80);
 		
 		g.setColor(Color.green);
-		g.fillOval(120, 120, 60, 80);
+		g.fillOval(120, 120, 80, 80);
 		
 		g.setColor(Color.black);
-		g.drawOval(120, 120, 60, 80);
+		g.drawOval(120, 120, 80, 80);
 		
 		g.setColor(Color.blue);
 		int [] vx2 = {400, 450, 350};
