@@ -8,16 +8,17 @@ public class Pi {
 		// infinitas" (Método 2) del enlace https://es.wikihow.com/calcular-Pi
 		
 		
-		int denominador = 1;
-		double resultado;
-		resultado = (4/ denominador);
+		double x = 3;
+		float piCalculado = 4;
+		int signo = -1;
+		do {
+		piCalculado += signo * 4.0 / x;
+		signo *= -1;
+		x += 2;
 
-		for (denominador = 1; (Math.abs(resultado - Math.PI)) <= 0.00001 ; denominador += 2) {
-			resultado = (4/ denominador) *-1;
-			System.out.println(denominador);
+		} while (Math.abs(Math.PI - piCalculado) >= 0.00001);
+		System.out.println(piCalculado);
+
 		}
-		
-		System.out.println(resultado);
-	}
-
 }
+	 
