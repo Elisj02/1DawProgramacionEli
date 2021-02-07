@@ -8,7 +8,7 @@ public class Pi {
 		// infinitas" (Método 2) del enlace https://es.wikihow.com/calcular-Pi
 		
 		
-		double x = 3;
+		double x = 3;  //denom
 		float piCalculado = 4;
 		int signo = -1;
 		do {
