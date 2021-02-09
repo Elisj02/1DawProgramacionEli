@@ -51,20 +51,3 @@ public class ActContraseña {
 	}
 
 }
-
-/*
- * do { String contraseña = JOptionPane.showInputDialog("Escriba a contraseña");
- * char[] caracteres = contraseña.toCharArray(); for (int i = 0; i <
- * caracteres.length; i++) {
- * 
- * if (digito == false) { digito = Character.isDigit(caracteres[i]); } if
- * (mayuscula== false) { mayuscula = Character.isUpperCase(caracteres[i]); } if
- * (minuscula==false) { minuscula = Character.isLowerCase(caracteres[i]); } if
- * (noAlfanumerico== false) { noAlfanumerico =
- * Character.isLetterOrDigit(caracteres[i]); }
- * 
- * } System.out.println("Contraseña incorrecta"); } while (digito == false ||
- * noAlfanumerico == false || minuscula == false || mayuscula == false);
- * 
- * System.out.println("Contraseña correcta");
- */
