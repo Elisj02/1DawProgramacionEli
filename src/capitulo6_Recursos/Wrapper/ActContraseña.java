@@ -26,23 +26,26 @@ public class ActContraseña {
 
 			char cad[];
 			cad = contr.toCharArray();
-			
+
 			for (i = 0; i < cad.length; i++) {
 
-					if (digito == false) {
-						digito = Character.isDigit(cad[i]);
-					}
-					if (mayuscula== false) {
-						mayuscula = Character.isUpperCase(cad[i]);
-					}
-					if (minuscula==false) {
-						minuscula = Character.isLowerCase(cad[i]);
-					}
-					if (noAlfanumerico== false) {
-						noAlfanumerico = Character.isLetterOrDigit(cad[i]);
-					}
+				if (digito == false) {
+					digito = Character.isDigit(cad[i]);
 				}
-			System.out.println("Contraseña incorrecta.");
+				if (mayuscula == false) {
+					mayuscula = Character.isUpperCase(cad[i]);
+				}
+				if (minuscula == false) {
+					minuscula = Character.isLowerCase(cad[i]);
+				}
+				if (noAlfanumerico == false) {
+					noAlfanumerico = Character.isLetterOrDigit(cad[i]);
+				}
+			}
+
+			if (digito == false || minuscula == false || mayuscula == false || noAlfanumerico == false) {
+				System.out.println("Contraseña incorrecta.");
+			}
 
 		} while (digito == false || minuscula == false || mayuscula == false || noAlfanumerico == false);
 		System.out.println("Contraseña válida.");
