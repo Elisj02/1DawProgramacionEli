@@ -27,7 +27,6 @@ public class ActContraseña {
 			char cad[];
 			cad = contr.toCharArray();
 			
-			System.out.println("\nAnaliza el array de caracteres: " + cad.toString());
 			for (i = 0; i < cad.length; i++) {
 
 					if (digito == false) {
