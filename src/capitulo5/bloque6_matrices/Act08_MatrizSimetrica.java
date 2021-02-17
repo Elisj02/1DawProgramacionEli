@@ -2,7 +2,7 @@ package capitulo5.bloque6_matrices;
 
 import capitulo5.bloque1.Utils;
 
-public class Act08_MatrizSimétrica {
+public class Act08_MatrizSimetrica {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,15 +14,15 @@ public class Act08_MatrizSimétrica {
 			}
 			System.out.println();
 		}
-		System.out.println("La matriz simétrica es = " + matrizSimetrica(matriz));
+		System.out.println("La matriz simï¿½trica es = " + matrizSimetrica(matriz));
 	}
 
 	public static boolean matrizSimetrica(int matriz[][]) {
 
 		/*
-		 * Crea un método que compruebe si la matriz es simétrica. (Los elementos de la
-		 * matriz (i, j) y (j, i), si existen, son iguales). El método recibirá una
-		 * matriz y devolverá un boolean.
+		 * Crea un mï¿½todo que compruebe si la matriz es simï¿½trica. (Los elementos de la
+		 * matriz (i, j) y (j, i), si existen, son iguales). El mï¿½todo recibirï¿½ una
+		 * matriz y devolverï¿½ un boolean.
 		 */
 
 		boolean esSimetrica = true;

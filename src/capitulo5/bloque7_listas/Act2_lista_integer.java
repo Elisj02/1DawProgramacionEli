@@ -13,27 +13,27 @@ public class Act2_lista_integer {
 	public static void main(String[] args) {
 		/*
 		 * Realiza un programa que trabaje con una Lista de elementos Integer. Debes
-		 * mostrar un menú en pantalla y ofrecer al usuario las siguientes opciones a
+		 * mostrar un menï¿½ en pantalla y ofrecer al usuario las siguientes opciones a
 		 * realizar sobre la lista: 
 		 * a) "Abandonar el programa". 
-		 * b)"Crear aleatoriamente la lista de valores". Pedirás al usuario los siguientes
-		 * datos: longitud de la lista, valor mínimo y valor máximo. A continuación
-		 * limpiarás la lista (por si contenía valores), y agregarás tantos elementos
-		 * enteros como se haya indicado, con valores que deben oscilar entre el mínimo
-		 * y el máximo señalado. 
-		 * c) "Calcular suma, media, mayor y menor". Mostrarás en
+		 * b)"Crear aleatoriamente la lista de valores". Pedirï¿½s al usuario los siguientes
+		 * datos: longitud de la lista, valor mï¿½nimo y valor mï¿½ximo. A continuaciï¿½n
+		 * limpiarï¿½s la lista (por si contenï¿½a valores), y agregarï¿½s tantos elementos
+		 * enteros como se haya indicado, con valores que deben oscilar entre el mï¿½nimo
+		 * y el mï¿½ximo seï¿½alado. 
+		 * c) "Calcular suma, media, mayor y menor". Mostrarï¿½s en
 		 * pantalla esos cuatro valores. 
 		 * d) "Agregar una cantidad de nuevos valores".
-		 * Pedirás al usuario los siguientes datos: cuántos datos nuevos quiere agregar,
-		 * posición a partir de la que se deben introducir, valor mínimo y valor máximo.
-		 * Incluirás tantos valores como indique el usuario, en la posición indicada,
-		 * con valores entre mínimo y máximo. 
-		 * e)"Eliminar elementos cuyo valor esté en un intervalo". Pedirás dos valores al
-		 * usuario (mínimo y máximo), que conforman un intervalo. Eliminarás los valores
+		 * Pedirï¿½s al usuario los siguientes datos: cuï¿½ntos datos nuevos quiere agregar,
+		 * posiciï¿½n a partir de la que se deben introducir, valor mï¿½nimo y valor mï¿½ximo.
+		 * Incluirï¿½s tantos valores como indique el usuario, en la posiciï¿½n indicada,
+		 * con valores entre mï¿½nimo y mï¿½ximo. 
+		 * e)"Eliminar elementos cuyo valor estï¿½ en un intervalo". Pedirï¿½s dos valores al
+		 * usuario (mï¿½nimo y mï¿½ximo), que conforman un intervalo. Eliminarï¿½s los valores
 		 * de la lista de elementos que se encuentren dentro de ese intervalo
-		 * (incluyendo los límites) e informarás de cuantos elementos has eliminado de
+		 * (incluyendo los lï¿½mites) e informarï¿½s de cuantos elementos has eliminado de
 		 * la lista. 
-		 * f) "Imprimir la lista". Mostrarás la lista en pantalla.
+		 * f) "Imprimir la lista". Mostrarï¿½s la lista en pantalla.
 		 */
 		
 		int opcion;
@@ -62,7 +62,7 @@ public class Act2_lista_integer {
 				visualizaLista(fichero);
 				break;
 			default:
-				System.err.println("Opción no válida");
+				System.err.println("Opciï¿½n no vï¿½lida");
 			}
 			
 			
@@ -74,14 +74,14 @@ public class Act2_lista_integer {
 	 * @return
 	 */
 	public static int menu () {
-		String strMenu = "\n\nMenú"
+		String strMenu = "\n\nMenï¿½"
 				+ "\n0.- SALIR"
 				+ "\n1.- CREAR ALEATORIAMENTE LA LISTA DE VALORES."
 				+ "\n2.- CALCULAR SUMA, MEDIA, MAYOR Y MENOR."
 				+ "\n3.- AGREGAR UNA CANTIDAD DE NUEVOS VALORES."
-				+ "\n4.- ELIMINAR ELEMENTOS CUYO VALOR ESTÉ EN UN INTERVALO."
+				+ "\n4.- ELIMINAR ELEMENTOS CUYO VALOR ESTï¿½ EN UN INTERVALO."
 				+ "\n5.- VISUALIZAR EL FICHERO."
-				+ "\n\nIntroduzca su opción: ";
+				+ "\n\nIntroduzca su opciï¿½n: ";
 
 		int opcionUsuario = Integer.parseInt(JOptionPane.showInputDialog(strMenu));
 		return opcionUsuario;
@@ -104,10 +104,10 @@ public class Act2_lista_integer {
 		str = JOptionPane.showInputDialog("Introduce la longitud de la lista: ");
 		int longitud = Integer.parseInt(str);
 		
-		str = JOptionPane.showInputDialog("Introduce el valor mínimo: ");
+		str = JOptionPane.showInputDialog("Introduce el valor mï¿½nimo: ");
 		int valorMin = Integer.parseInt(str);
 		
-		str = JOptionPane.showInputDialog("Introduce el valor máximo: ");
+		str = JOptionPane.showInputDialog("Introduce el valor mï¿½ximo: ");
 		int valorMax = Integer.parseInt(str);
 		
 		for (int i = 0; i < longitud; i++) {
@@ -148,19 +148,19 @@ public class Act2_lista_integer {
 	public static void agregar(List<Integer>lista) {
 		System.err.println("AGREGAR VALORES.");
 		String str;
-		str = JOptionPane.showInputDialog("¿Cuántos valores quiere añadir?: ");
-		int añadir = Integer.parseInt(str);
+		str = JOptionPane.showInputDialog("ï¿½Cuï¿½ntos valores quiere aï¿½adir?: ");
+		int aniadir = Integer.parseInt(str);
 		
-		str = JOptionPane.showInputDialog("¿En qué posición los quiere añadir?: ");
+		str = JOptionPane.showInputDialog("ï¿½En quï¿½ posiciï¿½n los quiere aï¿½adir?: ");
 		int posicion = Integer.parseInt(str);
 		
-		str = JOptionPane.showInputDialog("Introduzca un valor mínimo: ");
+		str = JOptionPane.showInputDialog("Introduzca un valor mÃ­nimo: ");
 		int valMin = Integer.parseInt(str);
 
-		str = JOptionPane.showInputDialog("Introduzca un valor máximo: ");
+		str = JOptionPane.showInputDialog("Introduzca un valor mï¿½ximo: ");
 		int valMax = Integer.parseInt(str);
 
-		for (int i = 0; i < añadir; i++) {
+		for (int i = 0; i < aniadir; i++) {
 			lista.add(posicion, Utils.obtenerNumeroAzar(valMin, valMax));
 		}
 	}
@@ -169,10 +169,10 @@ public class Act2_lista_integer {
 		System.err.println("ELIMINAR UN INTERVALO DE VALORES.");
 		String str;
 		int veces = 0;
-		str = JOptionPane.showInputDialog("Introduzca la primera línea del intervalo que quiere eliminar: ");
+		str = JOptionPane.showInputDialog("Introduzca la primera lï¿½nea del intervalo que quiere eliminar: ");
 		int linPrim = Integer.parseInt(str);
 		
-		str = JOptionPane.showInputDialog("Introduzca la última línea del intervalo que quiere eliminar: ");
+		str = JOptionPane.showInputDialog("Introduzca la ï¿½ltima lï¿½nea del intervalo que quiere eliminar: ");
 		int linUlt = Integer.parseInt(str);
 		
 		for (int i = linPrim; i <= linUlt; i++) {

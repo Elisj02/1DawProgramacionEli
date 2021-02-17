@@ -2,14 +2,14 @@ package capitulo6_Recursos.Wrapper;
 
 import javax.swing.JOptionPane;
 
-public class ActContraseña {
+public class ActContrasenia {
 
 	public static void main(String[] args) {
 		/*
-		 * 2º.- Crear un programa que pida al usuario una contraseña con los siguientes
-		 * requisitos: - Al menos una mayúscula. - Al menos una minúscula. - Al menos un
-		 * dígito - Al menos un carácter no alfanumérico. El programa no terminará hasta
-		 * que el usuario no introduzca la contraseña con estos requisitos.
+		 * 2ï¿½.- Crear un programa que pida al usuario una contraseï¿½a con los siguientes
+		 * requisitos: - Al menos una mayï¿½scula. - Al menos una minï¿½scula. - Al menos un
+		 * dï¿½gito - Al menos un carï¿½cter no alfanumï¿½rico. El programa no terminarï¿½ hasta
+		 * que el usuario no introduzca la contraseï¿½a con estos requisitos.
 		 */
 
 		boolean noAlfanumerico = false;
@@ -21,8 +21,8 @@ public class ActContraseña {
 		do {
 
 			String contr = JOptionPane.showInputDialog(
-					"Introduce una contraseña que tenga:\n" + "Al menos una mayúscula\n" + "Al menos una minúscula\n"
-							+ "Al menos un dígito\n" + "Al menos un carácter no alfanumérico");
+					"Introduce una contraseï¿½a que tenga:\n" + "Al menos una mayï¿½scula\n" + "Al menos una minï¿½scula\n"
+							+ "Al menos un dï¿½gito\n" + "Al menos un carï¿½cter no alfanumï¿½rico");
 
 			char cad[];
 			cad = contr.toCharArray();
@@ -44,11 +44,11 @@ public class ActContraseña {
 			}
 
 			if (digito == false || minuscula == false || mayuscula == false || noAlfanumerico == false) {
-				System.out.println("Contraseña incorrecta.");
+				System.out.println("ContraseÃ±a incorrecta.");
 			}
 
 		} while (digito == false || minuscula == false || mayuscula == false || noAlfanumerico == false);
-		System.out.println("Contraseña válida.");
+		System.out.println("ContraseÃ±a vÃ¡lida.");
 
 	}
 

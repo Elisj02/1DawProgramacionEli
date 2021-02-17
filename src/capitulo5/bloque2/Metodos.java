@@ -4,32 +4,32 @@ import javax.swing.JOptionPane;
 
 import capitulo5.bloque1.Utils;
 
-public class Métodos {
+public class Metodos {
 
 	public static void main(String[] args) {
 		System.out.println("-Act1. Media-");
 		System.out.println(media(5, 10, 15, 18.9f));
-		System.out.println("\n-Act2. Validar número del usuario entre límites-");
+		System.out.println("\n-Act2. Validar nï¿½mero del usuario entre lï¿½mites-");
 		System.out.println(obtenerNumeroDeUsuarioEntreMinimoYMaximo(0, 28));
-		System.out.println("\n-Act3. Máximo-");
+		System.out.println("\n-Act3. Mï¿½ximo-");
 		System.out.println(maximo(84, 21));
-		System.out.println("\n-Act4. Obtener un número impar entre límites-");
+		System.out.println("\n-Act4. Obtener un nï¿½mero impar entre lï¿½mites-");
 		System.out.println(numeroImparEntreLimites(1, 80));
-		System.out.println("\n-Act5. Devolver número en letra-");
+		System.out.println("\n-Act5. Devolver nï¿½mero en letra-");
 		System.out.println(getStringFromEntero(8));
-		System.out.println("\n-Act6. Imprimir el mínimo, medio y máximo-");
+		System.out.println("\n-Act6. Imprimir el mï¿½nimo, medio y mï¿½ximo-");
 
 		int num1;
 		String srt;
-		srt = JOptionPane.showInputDialog("Introduce un número: ");
+		srt = JOptionPane.showInputDialog("Introduce un nï¿½mero: ");
 		num1 = Integer.parseInt(srt);
 
 		int num2;
-		srt = JOptionPane.showInputDialog("Introduce un número: ");
+		srt = JOptionPane.showInputDialog("Introduce un nï¿½mero: ");
 		num2 = Integer.parseInt(srt);
 
 		int num3;
-		srt = JOptionPane.showInputDialog("Introduce un número: ");
+		srt = JOptionPane.showInputDialog("Introduce un nï¿½mero: ");
 		num3 = Integer.parseInt(srt);
 
 		imprimeMinimoAMaximo(num1, num2, num3);
@@ -52,10 +52,10 @@ public class Métodos {
 	public static float media(int num1, int num2, int num3, float num4) {
 
 		/*
-		 * Método que reciba como parámetros de entrada tres valores enteros y uno
-		 * flotante. El método se llamará "media" y debe devolver la media aritmética de
-		 * los cuatro valores. El valor devuelto debe ser flotante. El método "main"
-		 * debe llamar a este otro método, con valores inventados por ti, e imprimir el
+		 * Mï¿½todo que reciba como parï¿½metros de entrada tres valores enteros y uno
+		 * flotante. El mï¿½todo se llamarï¿½ "media" y debe devolver la media aritmï¿½tica de
+		 * los cuatro valores. El valor devuelto debe ser flotante. El mï¿½todo "main"
+		 * debe llamar a este otro mï¿½todo, con valores inventados por ti, e imprimir el
 		 * valor de la media en la consola de salida.
 		 */
 		float media = ((num1 + num2 + num3 + num4) / 4);
@@ -67,24 +67,24 @@ public class Métodos {
 	public static int obtenerNumeroDeUsuarioEntreMinimoYMaximo(int min, int max) {
 
 		/*
-		 * Método llamado "obtenerNumeroDeUsuarioEntreMinimoYMaximo" que reciba dos
-		 * valores enteros: un valor mínimo y un valor máximo. El método debe pedir un
-		 * numero al usuario. El método examinará el número introducido por el usuario
-		 * y, si dicho número no está entre el valor mínimo y el máximo que se ha
-		 * indicado, seguirá pidiendo números al usuario hasta que se obtenga uno
-		 * válido. Finalmente se debe devolver dicho valor del usuario al método main,
-		 * que lo imprimirá en la consola.
+		 * Mï¿½todo llamado "obtenerNumeroDeUsuarioEntreMinimoYMaximo" que reciba dos
+		 * valores enteros: un valor mï¿½nimo y un valor mï¿½ximo. El mï¿½todo debe pedir un
+		 * numero al usuario. El mï¿½todo examinarï¿½ el nï¿½mero introducido por el usuario
+		 * y, si dicho nï¿½mero no estï¿½ entre el valor mï¿½nimo y el mï¿½ximo que se ha
+		 * indicado, seguirï¿½ pidiendo nï¿½meros al usuario hasta que se obtenga uno
+		 * vï¿½lido. Finalmente se debe devolver dicho valor del usuario al mï¿½todo main,
+		 * que lo imprimirï¿½ en la consola.
 		 */
 		int valor;
 		String srt;
 
 		srt = JOptionPane
-				.showInputDialog("Introduce un valor para verificar si está entre los " + "límites establecidos: ");
+				.showInputDialog("Introduce un valor para verificar si estï¿½ entre los " + "lï¿½mites establecidos: ");
 		valor = Integer.parseInt(srt);
 
-		// para que pida el valor hasta que el número esté dentro del límite
+		// para que pida el valor hasta que el nï¿½mero estï¿½ dentro del lï¿½mite
 		while (valor < min || valor > max) {
-			srt = JOptionPane.showInputDialog("Introduce un número entre " + min + " y " + max + ": ");
+			srt = JOptionPane.showInputDialog("Introduce un nï¿½mero entre " + min + " y " + max + ": ");
 			valor = Integer.parseInt(srt);
 		}
 
@@ -94,10 +94,10 @@ public class Métodos {
 	public static int maximo(int num1, int num2) {
 
 		/*
-		 * Método llamado "maximo" que devuelva el valor máximo de dos números enteros
-		 * recibidos como argumentos de entrada. El método main pedirá dos números al
-		 * usuario y los enviará a este nuevo método. Finalmente imprimirá en consola el
-		 * valor devuelto por el método.
+		 * Mï¿½todo llamado "maximo" que devuelva el valor mï¿½ximo de dos nï¿½meros enteros
+		 * recibidos como argumentos de entrada. El mï¿½todo main pedirï¿½ dos nï¿½meros al
+		 * usuario y los enviarï¿½ a este nuevo mï¿½todo. Finalmente imprimirï¿½ en consola el
+		 * valor devuelto por el mï¿½todo.
 		 */
 
 		// Math.max(num1, num2); Es lo mismo
@@ -114,9 +114,9 @@ public class Métodos {
 	public static int numeroImparEntreLimites(int liminf, int limsup) {
 
 		/*
-		 * Método llamado "numeroImparEntreLimites" que devuelva un número entero
-		 * aleatorio, impar y comprendido entre dos límites recibidos como parámetros de
-		 * entrada. "main" debe llamar a este método e imprimir el valor devuelto.
+		 * Mï¿½todo llamado "numeroImparEntreLimites" que devuelva un nï¿½mero entero
+		 * aleatorio, impar y comprendido entre dos lï¿½mites recibidos como parï¿½metros de
+		 * entrada. "main" debe llamar a este mï¿½todo e imprimir el valor devuelto.
 		 */
 		int num;
 		num = Utils.obtenerNumeroAzar(liminf, limsup);
@@ -131,9 +131,9 @@ public class Métodos {
 	public static String getStringFromEntero(int num) {
 
 		/*
-		 * Realiza un método que reciba un valor entero, del 1 al 10, como argumento de
-		 * entrada y devuelva un String, con dicho número escrito en palabras. Llama a
-		 * este método "getStringFromEntero".
+		 * Realiza un mï¿½todo que reciba un valor entero, del 1 al 10, como argumento de
+		 * entrada y devuelva un String, con dicho nï¿½mero escrito en palabras. Llama a
+		 * este mï¿½todo "getStringFromEntero".
 		 */
 
 		/*
@@ -146,7 +146,7 @@ public class Métodos {
 		String enletra[] = new String[] { "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve",
 				"diez" };
 		if (num >= enletra.length) {
-			return "no hay traducción";
+			return "no hay traducciï¿½n";
 		}
 		return enletra[num];
 
@@ -155,7 +155,7 @@ public class Métodos {
 	public static void imprimeMinimoAMaximo(int num1, int num2, int num3) {
 
 		/*
-		 * Método, llamado "imprimeMinimoAMaximo", que reciba tres valores enteros como
+		 * Mï¿½todo, llamado "imprimeMinimoAMaximo", que reciba tres valores enteros como
 		 * argumentos de entrada. Debe imprimir dichos valores en orden de menor a
 		 * mayor.
 		 */
@@ -199,24 +199,24 @@ public class Métodos {
 	public static void fibonacci(int longitud) {
 
 		/*
-		 * La serie de Fibonacci es una serie numérica que comienza en los números 1, 1
+		 * La serie de Fibonacci es una serie numï¿½rica que comienza en los nï¿½meros 1, 1
 		 * y continua de forma infinita, calculando cada miembro de la serie como la
 		 * suma de los dos anteriores. De esta manera, la serie de Fibonacci comienza 1,
-		 * 1, 2, 3, 5, 8, 13, 21, 34... Debes realizar un método llamado "fibonacci".
-		 * Recibirá un argumento de entrada, de tipo entero. El método debe devolver un
-		 * array con la serie de Fibonacci. El parámetro de entrada del método
-		 * determinará la longitud del array a devolver. El método main recibirá el
-		 * array y lo imprimirá en la consola.
+		 * 1, 2, 3, 5, 8, 13, 21, 34... Debes realizar un mï¿½todo llamado "fibonacci".
+		 * Recibirï¿½ un argumento de entrada, de tipo entero. El mï¿½todo debe devolver un
+		 * array con la serie de Fibonacci. El parï¿½metro de entrada del mï¿½todo
+		 * determinarï¿½ la longitud del array a devolver. El mï¿½todo main recibirï¿½ el
+		 * array y lo imprimirï¿½ en la consola.
 		 */
 
 		int numeros[] = new int[longitud]; // Declaro el array
 
-		// Los dos primeros números de Fibonacci se indican
+		// Los dos primeros nï¿½meros de Fibonacci se indican
 
 		numeros[0] = 1;
 		numeros[1] = 1;
 
-		// Recorro el array desde la posición "2", calculando cada número como la suma
+		// Recorro el array desde la posiciï¿½n "2", calculando cada nï¿½mero como la suma
 		// de los dos anteriores
 
 		for (int i = 2; i < numeros.length; i++) {
@@ -234,8 +234,8 @@ public class Métodos {
 	public static void imprimeArray(int array[]) {
 
 		/*
-		 * Método que imprima en pantalla un array, recibirá un array como parámetro de
-		 * entrada y lo mostrará en consola. Main debe enviar el array al método,
+		 * Mï¿½todo que imprima en pantalla un array, recibirï¿½ un array como parï¿½metro de
+		 * entrada y lo mostrarï¿½ en consola. Main debe enviar el array al mï¿½todo,
 		 * llamado "imprimeArray".
 		 */
 
@@ -247,18 +247,18 @@ public class Métodos {
 	public static int[] recorte(int array[], int primerIndice, int ultimoIndice) {
 
 		/*
-		 * Método que "recorte" un array. El método recibirá un array, un "primerIndice"
+		 * Mï¿½todo que "recorte" un array. El mï¿½todo recibirï¿½ un array, un "primerIndice"
 		 * y un "ultimoIndice" y debe devolver un array, formado con los elementos del
-		 * array recibido, cuyos índices estén dentro del intervalo cerrado formado por
-		 * los dos índices recibidos
+		 * array recibido, cuyos ï¿½ndices estï¿½n dentro del intervalo cerrado formado por
+		 * los dos ï¿½ndices recibidos
 		 */
 
-		// para que la longitud del array esté formada por los índices recibidos
+		// para que la longitud del array estï¿½ formada por los ï¿½ndices recibidos
 		int array2[] = new int[(ultimoIndice - primerIndice) + 1];
 
 		for (int i = 0; i < array2.length; i++) {
 			// para que el valor 0 del array2 sea el mismo que el primer indice introducido
-			// del array1 y así con todos los números del array2.
+			// del array1 y asï¿½ con todos los nï¿½meros del array2.
 			array2[i] = array[i + primerIndice];
 		}
 
@@ -269,11 +269,11 @@ public class Métodos {
 	public static void recursividad(int num) {
 
 		/*
-		 * Método que muestre en pantalla los números del 1 al 100. El único requisito
+		 * Mï¿½todo que muestre en pantalla los nï¿½meros del 1 al 100. El ï¿½nico requisito
 		 * para esto es que debe hacerse utilizando la recursividad.
 		 */
 
-		// muestra números del 1 al 100
+		// muestra nï¿½meros del 1 al 100
 		if (num >= 1) {
 			recursividad(num - 1);
 			System.out.print(num + "  ");

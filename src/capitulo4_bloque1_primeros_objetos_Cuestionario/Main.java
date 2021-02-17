@@ -10,19 +10,19 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		PreguntaVF capitalEspaña = new PreguntaVF("Madrid es la capital de España", "V");
+		PreguntaVF capitalEspania = new PreguntaVF("Madrid es la capital de Espaï¿½a", "V");
 
 		PreguntaVF puntoDeEbullicion = new PreguntaVF("El agua hierve a 70 grados", "F");
 
 		PreguntaVF sol = new PreguntaVF("El sol sale por el este", "V");
 
-		PreguntaOpcion anioJava = new PreguntaOpcion("¿En qué año se creó el lenguaje java?", 2,
+		PreguntaOpcion anioJava = new PreguntaOpcion("ï¿½En quï¿½ aï¿½o se creï¿½ el lenguaje java?", 2,
 				new String[] { "2010", "1995", "1983", "1990", "2000" });
 
-		PreguntaOpcion nombreOrdenador = new PreguntaOpcion("¿Cuál fue el nombre del primer ordenador? ", 3,
+		PreguntaOpcion nombreOrdenador = new PreguntaOpcion("ï¿½Cuï¿½l fue el nombre del primer ordenador? ", 3,
 				new String[] { "EDVAC", "UNIVAC I", "IMB 701", "ENIAC", "ZUSE Z22" });
 
-		preguntas.add(capitalEspaña);
+		preguntas.add(capitalEspania);
 		preguntas.add(puntoDeEbullicion);
 		preguntas.add(sol);
 		preguntas.add(anioJava);

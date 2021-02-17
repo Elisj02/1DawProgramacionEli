@@ -1,6 +1,6 @@
-package capitulo5.bloque5_Métodos_Y_Arrays;
+package capitulo5.bloque5_Metodos_Y_Arrays;
 
-public class Método2_FindAndReplace {
+public class Metodo2_FindAndReplace {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,15 +19,15 @@ public class Método2_FindAndReplace {
 	public static void FindAndReplace(int array[], int valor, int aux) {
 
 		/*
-		 * Un método llamado "findAndReplace", que reciba: - Un array de números
+		 * Un mï¿½todo llamado "findAndReplace", que reciba: - Un array de nï¿½meros
 		 * enteros. - Un valor entero que debe buscarse en el array. - Un valor entero
 		 * que debe servir para reemplazar.
 		 * 
-		 * El método buscará todas las ocasiones en las que el segundo parámetro
-		 * aparezca dentro del array y reemplazará ese valor con el valor del tercer
-		 * parámetro.
+		 * El mï¿½todo buscarï¿½ todas las ocasiones en las que el segundo parï¿½metro
+		 * aparezca dentro del array y reemplazarï¿½ ese valor con el valor del tercer
+		 * parï¿½metro.
 		 * 
-		 * El método main debe crear un array, imprimirlo en consola, llamar al método
+		 * El mï¿½todo main debe crear un array, imprimirlo en consola, llamar al mï¿½todo
 		 * "findAndReplace" y volver a imprimir el array en consola.
 		 */
 

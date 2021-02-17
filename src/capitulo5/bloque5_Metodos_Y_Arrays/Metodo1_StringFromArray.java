@@ -1,8 +1,8 @@
-package capitulo5.bloque5_Métodos_Y_Arrays;
+package capitulo5.bloque5_Metodos_Y_Arrays;
 
 import capitulo5.bloque1.Utils;
 
-public class Método1_StringFromArray {
+public class Metodo1_StringFromArray {
 
 	public static void main(String[] args) {
 
@@ -18,11 +18,11 @@ public class Método1_StringFromArray {
 	public static String StringFromArray(int array[]) {
 
 		/*
-		 * Un método llamado "stringFromArray", que reciba un array de números enteros y
-		 * devuelva una cadena de caracteres. El método debe recorrer el array, de la
-		 * misma forma en la que harías para mostrarlo en consola, pero en lugar de
+		 * Un mï¿½todo llamado "stringFromArray", que reciba un array de nï¿½meros enteros y
+		 * devuelva una cadena de caracteres. El mï¿½todo debe recorrer el array, de la
+		 * misma forma en la que harï¿½as para mostrarlo en consola, pero en lugar de
 		 * imprimir en consola debes construir un objeto String. Finalmente debes
-		 * devolver el String e imprimirlo en el método "main".
+		 * devolver el String e imprimirlo en el mï¿½todo "main".
 		 */
 
 		String str = " ";

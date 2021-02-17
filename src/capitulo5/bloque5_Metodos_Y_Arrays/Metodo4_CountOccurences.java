@@ -1,8 +1,8 @@
-package capitulo5.bloque5_Métodos_Y_Arrays;
+package capitulo5.bloque5_Metodos_Y_Arrays;
 
 import capitulo5.bloque1.Utils;
 
-public class Método4_CountOccurences {
+public class Metodo4_CountOccurences {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -15,10 +15,10 @@ public class Método4_CountOccurences {
 
 	public static int countOccurrences(int array[], int valor) {
 		/*
-		 * Realiza un método llamado "countOccurrences", que reciba: - Un array de
-		 * números enteros. - Un valor entero. El método debe devolver un valor entero,
-		 * que corresponda con el número de veces que el valor entero recibido como
-		 * segundo parámetro exista dentro del array recibido como primer parámetro.
+		 * Realiza un mï¿½todo llamado "countOccurrences", que reciba: - Un array de
+		 * nï¿½meros enteros. - Un valor entero. El mï¿½todo debe devolver un valor entero,
+		 * que corresponda con el nï¿½mero de veces que el valor entero recibido como
+		 * segundo parï¿½metro exista dentro del array recibido como primer parï¿½metro.
 		 */
 
 		int veces = 0;

@@ -1,8 +1,6 @@
-package capitulo5.bloque5_Métodos_Y_Arrays;
+package capitulo5.bloque5_Metodos_Y_Arrays;
 
-import capitulo5.bloque1.Utils;
-
-public class Método3_AddInteger {
+public class Metodo3_AddInteger {
 
 	public static void main(String[] args) {
 
@@ -18,13 +16,13 @@ public class Método3_AddInteger {
 	public static int[] addInteger(int[] array, int valor) {
 
 		/*
-		 * Realiza un método llamado "addInteger", que reciba: -Un array de números
-		 * enteros. -Un valor entero. Dentro del método debes: -Crear un nuevo array,
-		 * cuya longitud sea la del array recibido como primer parámetro + 1. -Copiar el
-		 * array del primer parámetro en el array creado dentro del método, elemento
+		 * Realiza un mï¿½todo llamado "addInteger", que reciba: -Un array de nï¿½meros
+		 * enteros. -Un valor entero. Dentro del mï¿½todo debes: -Crear un nuevo array,
+		 * cuya longitud sea la del array recibido como primer parï¿½metro + 1. -Copiar el
+		 * array del primer parï¿½metro en el array creado dentro del mï¿½todo, elemento
 		 * tras elemento. -Agregar el nuevo elemento al final del nuevo array. -Asignar,
-		 * al array recibido mediante el primer parámetro, el puntero al nuevo array
-		 * creado en el interior del método. -El método debe devolver un array de tipo
+		 * al array recibido mediante el primer parï¿½metro, el puntero al nuevo array
+		 * creado en el interior del mï¿½todo. -El mï¿½todo debe devolver un array de tipo
 		 * entero. Main debe recoger el array devuelto e imprimirlo en consola.
 		 */
 
